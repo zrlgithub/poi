@@ -1,0 +1,24 @@
+<!-- register.jsp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (previous head content) ... -->
+</head>
+<body>
+    <form action="RegisterServlet" method="post">
+        <h2>Register</h2>
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required>
+
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+
+        <button type="submit">Register</button>
+
+        <!-- Display registration success message if applicable -->
+        <c:if test="${param.registered ne null}">
+            <p style="color: green;">Registration successful! You can now <a href="login.jsp">login</a>.</p>
+        </c:if>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <!-- Include additional stylesheets, scripts, or other head content here -->
+</head>
+
+<body>
+    <h2>Dashboard</h2>
+
+    <!-- Display Users -->
+    <h3>Registered Users</h3>
+    <ul>
+        <c:forEach var="user" items="${registeredUsers}">
+            <li>${user.username}</li>
+        </c:forEach>
+    </ul>
+
+    <!-- Display Points of Interest, Likes, and Comments -->
+    <h3>Points of Interest</h3>
+    <ul>
+        <c:forEach var="poi" items="${pointsOfInterest}">
+            <li>${poi.name}</li>
+            <ul>
+                <li>Likes: ${poi.likes}</li>
+                <li>Comments:</li>
+                <ul>
+                    <c:forEach var="comment" items="${poi.comments}">
+                        <li>${comment.text}</li>
+                    </c:forEach>
+                </ul>
+            </ul>
+        </c:forEach>
+    </ul>
+
+    <!-- Add Points of Interest -->
+    <h3>Add Point of Interest</h3>
+  
+    
+     <form action="AddPOIServlet" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" required><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+
+        <button type="submit">Add Point of Interest</button>
+    </form>
+</body>
+</html>

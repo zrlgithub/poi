@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\ZRL\eclipse-workspace2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1383823729.index
+\poi\src\main\java
+C:\Users\ZRL\eclipse-workspace2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1143344243.index
+\test\src\main\java
+C:\Users\ZRL\eclipse-workspace2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2653984221.index
+\poi\src\main\java
+C:\Users\ZRL\eclipse-workspace2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\696816287.index
+\jsp-servlet-jdbc-mysql-crud-tutorial
+C:\Users\ZRL\eclipse-workspace2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3117473032.index
+\test\src\main\java
+C:\Users\ZRL\eclipse-workspace2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2924701001.index
+\poi\src\main\java
